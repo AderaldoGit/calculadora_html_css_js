@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="display">
+          <section id="inputs-user">
+            <span id="preview-inputsA"></span>
+            <span id="operator_user"></span>
+            <span id="preview-inputsB"></span>
+            <span id="pre_result"></span>
+          </section>
+        </div>
+        <div class="buttons">
+          <button onclick="inputs_user('7')">7</button>
+          <button onclick="inputs_user('8')">8</button>
+          <button onclick="inputs_user('9')">9</button>
+          <button class="operator" onclick="operations_user('/')">÷</button>
+          <button onclick="inputs_user('4')">4</button>
+          <button onclick="inputs_user('5')">5</button>
+          <button onclick="inputs_user('6')">6</button>
+          <button class="operator" onclick="operations_user('*')">×</button>
+          <button onclick="inputs_user('1')">1</button>
+          <button onclick="inputs_user('2')">2</button>
+          <button onclick="inputs_user('3')">3</button>
+          <button class="operator" onclick="operations_user('-')">–</button>
+          <button onclick="inputs_user('0')">0</button>
+          <button onclick="inputs_user('.')">.</button>
+          <button onclick="backspace()">←</button>
+          <button class="operator" onclick="operations_user('+')">+</button>
+          <p>Calculadora</p>
+          <p>HTML/CSS/JS</p>
+          <button class="clear" onclick="clearDisplay()">C</button>
+          <button class="equals" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

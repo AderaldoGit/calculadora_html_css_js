@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator-container{
+    width: 500px;
+    height: 610px;
+}
+
+.calculator {
+    width: 100%; 
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.calculator .display{
+    height: 280px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border: 1px solid #4b5563;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #374151;
+    color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.display #inputs-user{
+    margin: 10px 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    font-size: 3.1rem;
+    padding: 0 10px;
+}
+
+#inputs-user span{
+    width: 420px;
+}
+
+#pre_result{
+    text-align: left;
+    font-size: 2.9rem;
+}
+
+.calculator input {
+    height: 190px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border: 1px solid #4b5563;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #374151;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+p{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.calculator button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4b5563;
+    color: #ffffff;
+}
+
+.calculator button:hover {
+    background-color: #6b7280;
+}
+
+.calculator .operator {
+    background-color: #3b82f6;
+}
+
+.calculator .operator:hover {
+    background-color: #2563eb;
+}
+
+.calculator .equals {
+    background-color: #10b981;
+}
+
+.calculator .equals:hover {
+    background-color: #059669;
+}
+
+.calculator .clear {
+    background-color: #ef4444;
+}
+
+.calculator .clear:hover {
+    background-color: #dc2626;
+}
