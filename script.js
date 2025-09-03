@@ -73,7 +73,6 @@ function inputs_user(command) {
 }
 
 function operations_user(command) {
-  console.log(`Operação: ${command}`);
   if (operador_selected.textContent == "") {
     operador_selected.textContent = command;
   } else if (pre_results.textContent != "") {
@@ -139,4 +138,5 @@ function operacoes(num1, num2, operador) {
       return valor1 + valor2;
   }
 }
+
 
