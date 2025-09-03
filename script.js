@@ -3,6 +3,65 @@ const operador_selected = document.getElementById("operator_user");
 const inputsB = document.getElementById("preview-inputsB");
 const pre_results = document.getElementById("pre_result");
 
+document.addEventListener("keydown", function (e) {
+  switch (e.key) {
+    case "0":
+      inputs_user(e.key);
+      break;
+    case "1":
+      inputs_user(e.key);
+      break;
+    case "2":
+      inputs_user(e.key);
+      break;
+    case "3":
+      inputs_user(e.key);
+      break;
+    case "4":
+      inputs_user(e.key);
+      break;
+    case "5":
+      inputs_user(e.key);
+      break;
+    case "6":
+      inputs_user(e.key);
+      break;
+    case "7":
+      inputs_user(e.key);
+      break;
+    case "8":
+      inputs_user(e.key);
+      break;
+    case "9":
+      inputs_user(e.key);
+      break;
+    case ".":
+      inputs_user(".");
+      break;
+    case ",":
+      inputs_user(".");
+      break;
+    case "Enter":
+      calculate();
+      break;
+    case "/":
+      operations_user(e.key);
+      break;
+    case "*":
+      operations_user(e.key);
+      break;
+    case "-":
+      operations_user(e.key);
+      break;
+    case "+":
+      operations_user(e.key);
+      break;
+    case "Backspace":
+      backspace();
+      break;
+  }
+});
+
 function inputs_user(command) {
   if (operador_selected.textContent == "") {
     inputsA.textContent = inputsA.textContent + command;
@@ -80,3 +139,4 @@ function operacoes(num1, num2, operador) {
       return valor1 + valor2;
   }
 }
+
